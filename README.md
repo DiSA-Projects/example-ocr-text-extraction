@@ -9,12 +9,14 @@ The goal is to quickly and accurately extract text from one data format that can
 Working with a Python library (a set of prewritten code that makes it easier to do certain tasks) can be an easy and free way to extract text from images and PDFs. Most of these libraries can be setup quickly and run from either the command line or within a Jupityr notebook. Much like their paid alternatives, these Python libraries make use of the latest AI innovations and Learning Models. If your document images are primarily of modern printed or typed texts, then pyTesseract or EasyOCR can be a great inexpensive solution.
 
 ### pyTesseract
-pytesseract is a wrapper for Google's [Tesseract-OCR Engine](https://github.com/tesseract-ocr/tesseract). It can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. It also has unicode (UTF-8) support and can recognize over 100 languages. Handwriting transcription is still not very good.
-* [pyTesseract Demo Jupityr notebook](demo_pytesseract.ipynb)
+PyTesseract is an open-source Python library used to extract text from image files. Built as a wrapper for Google's [Tesseract-OCR Engine](https://github.com/tesseract-ocr/tesseract), it relies on traditional image processing techniques and pattern matching for character recognition. It can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. It also has unicode (UTF-8) support and can recognize over 100 languages. PyTesseract performs well on high-resolution, clean images with clear text and simple layouts. Preprocessing (image cleanup, noise reduction, deskewing) is required.
+
+Combining PyTesseract with the pdf2image library, you can extract pages from a PDF as images, then process them with PyTesseract
+* [pyTesseract Jupityr notebook](demo_pytesseract.ipynb)
 * [Official pyTesseract Github](https://pypi.org/project/pytesseract/)
 
 ### EasyOCR
-EasyOCR supports 80+ languages and popular writing scripts, including: Latin, Chinese, Arabic, Devanagari, Cyrillic, etc. At the moment, no handwritten text support - but this is in pipeline next. 
-* [EasyOCR Demo Jupityr notebook](demo_easyocr.ipynb)
+EasyOCR is an open-source Python library (like PyTesseract) used to extract text from image files. EasyOCR leverages deep learning models, specifically Convolutional Recurrent Neural Networks (CRNN) and Connectionist Temporal Classification (CTC), for text detection and recognition. Excels at recognizing text in challenging conditions: noisy images, varying fonts, complex layouts, and distorted text. Deep-learning approach means less extensive image preprocessing needed. It can also leverage GPU acceleration for faster processing. EasyOCR supports 80+ languages and popular writing scripts, including: Latin, Chinese, Arabic, Devanagari, Cyrillic, etc. At the moment, no handwritten text support - but this is in pipeline next. 
+* [EasyOCR Jupityr notebook](demo_easyocr.ipynb)
 * [Official EasyOCR Github](https://github.com/JaidedAI/EasyOCR)
 
