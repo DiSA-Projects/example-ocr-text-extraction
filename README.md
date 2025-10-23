@@ -16,7 +16,7 @@ Combining PyTesseract with the pdf2image library, you can extract pages from a P
 * [Official pyTesseract Github](https://pypi.org/project/pytesseract/)
 
 ### EasyOCR
-EasyOCR is an open-source Python library (like PyTesseract) used to extract text from image files. EasyOCR leverages deep learning models, specifically Convolutional Recurrent Neural Networks (CRNN) and Connectionist Temporal Classification (CTC), for text detection and recognition. Excels at recognizing text in challenging conditions: noisy images, varying fonts, complex layouts, and distorted text. Deep-learning approach means less extensive image preprocessing needed. It can also leverage GPU acceleration for faster processing. EasyOCR supports 80+ languages and popular writing scripts, including: Latin, Chinese, Arabic, Devanagari, Cyrillic, etc. At the moment, no handwritten text support - but this is in pipeline next. 
+EasyOCR is an open-source Python library (like PyTesseract) used to extract text from image files. EasyOCR leverages deep learning models, specifically Convolutional Recurrent Neural Networks (CRNN) and Connectionist Temporal Classification (CTC), for text detection and recognition. EasyOCR excels at recognizing text in challenging conditions: noisy images, varying fonts, complex layouts, and distorted text, and its deep-learning approach means less extensive image preprocessing needed. It can also leverage GPU acceleration for faster processing. EasyOCR supports 80+ languages and popular writing scripts, including: Latin, Chinese, Arabic, Devanagari, Cyrillic, etc. At the moment, no handwritten text support - but this is in pipeline next. 
 * [EasyOCR Jupityr notebook](demo_easyocr.ipynb)
 * [Official EasyOCR Github](https://github.com/JaidedAI/EasyOCR)
 
