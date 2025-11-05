@@ -1,4 +1,4 @@
-# Extracting text from images (OCR & HTR) Using Python
+# Extracting text from images (OCR & HTR) using Python
 
 ## What is Text Extraction (OCR & HTR)?
 Optical Character Recognition (OCR) is a technology that turns images of text (eg. bmp, jpg, png, tiff, pdf) into an editable format (usually txt files or JSON).
